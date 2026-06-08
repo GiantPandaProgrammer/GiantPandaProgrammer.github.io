@@ -1,1 +1,1 @@
-# GiantPandaProgrammer.github.io 2
+# GiantPandaProgrammer.github.io
