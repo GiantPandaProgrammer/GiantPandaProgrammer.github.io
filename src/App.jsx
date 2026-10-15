@@ -12,6 +12,7 @@ import Particles from "react-tsparticles";
 import Particle from './Particle';
 import dragon from './assets/dragon.png'; 
 import Home from './components/home.jsx';
+import Portfolio from './components/portfolio.jsx';
 import {
   BrowserRouter as Router,
   Route,
@@ -28,10 +29,10 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/game" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </Router>

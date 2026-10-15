@@ -2,7 +2,10 @@ import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '../assets/vite.svg'
 import me from '../assets/me.png'
+import piano from '../assets/piano.png'
+import weather from '../assets/weather.png'
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AiFillGithub } from "react-icons/ai";
@@ -57,11 +60,19 @@ function Home() {
               <img
                 src={me}
                 style={{ maxHeight: "450px", index: 1201 }}
+                className="responsive-img"
               />
             </Col>
           </Row>
           <Row>
-            <Col md={7}>
+            <Col md={12} style={{ display: "flex", padding: 10, zIndex: 1201 }}>
+              <Link to="/portfolio" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
+                My Portfolio
+              </Link>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={5}>
               <ul className="home-about-social-links">
                 <li className="social-icons">
                   <a
@@ -95,7 +106,7 @@ function Home() {
                 </li>
               </ul>
             </Col>
-          </Row>
+          </Row>      
         </Container>
       </section>
     </>

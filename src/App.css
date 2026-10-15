@@ -192,8 +192,8 @@ ul {
   display: flex;
   list-style-type: none; /* Removes bullets */
   padding: 0;
-  gap: 20px;            /* Adds space between items */
-  justify-content: center; /* Centers the items horizontally */
+  gap: 20px;   
+  padding-left: 0 !important;         /* Adds space between items */
 }
 
 .typewriter-text {
@@ -211,4 +211,16 @@ ul {
 
 .social-icons {
   z-index: 1200;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; /* Prevents image distortion */
+}
+
+.portfolio-text {
+  align-content: center; 
 }
