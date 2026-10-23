@@ -14,7 +14,7 @@ import Typewriter from "typewriter-effect";
 import Particles from "react-tsparticles";
 import Particle from '../Particle';
 import dragon from '../assets/dragon.png'; 
-
+import portfolio from '../assets/portfolio.png'; 
 /*
   type writer effect
  about me section
@@ -65,13 +65,6 @@ function Home() {
             </Col>
           </Row>
           <Row>
-            <Col md={12} style={{ display: "flex", padding: 10, zIndex: 1201 }}>
-              <Link to="/portfolio" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
-                My Portfolio
-              </Link>
-            </Col>
-          </Row>
-          <Row>
             <Col md={5}>
               <ul className="home-about-social-links">
                 <li className="social-icons">
@@ -96,12 +89,12 @@ function Home() {
                 </li>
                 <li className="social-icons">
                   <a
-                    href="https://www.lexaloffle.com/bbs/?tid=158540"
+                    href="/portfolio"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
                   >
-                    <img src={dragon} alt="Dragon" style={{ width: '32px', height: '32px' }} />
+                    <img src={portfolio} alt="Portfolio" style={{ width: '32px', height: '32px' }} />
                   </a>
                 </li>
               </ul>

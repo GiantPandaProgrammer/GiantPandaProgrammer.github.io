@@ -67,7 +67,17 @@ function Portfolio() {
                 />
               </Col>
               <Col md={6} className="portfolio-text">
-                <div>A bubble shooting game coded in Pico8 console</div>            
+                <div>A bubble shooting game coded in Pico8 console</div>
+                <li className="social-icons">
+                  <a
+                    href="https://www.lexaloffle.com/bbs/?tid=158540"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    Here is the game.
+                  </a>
+                </li>            
               </Col>
           </Row>
         </Container>
