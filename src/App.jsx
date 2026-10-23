@@ -14,7 +14,7 @@ import dragon from './assets/dragon.png';
 import Home from './components/home.jsx';
 import Portfolio from './components/portfolio.jsx';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   Routes,
   Navigate

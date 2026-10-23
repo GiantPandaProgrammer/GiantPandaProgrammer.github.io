@@ -99,7 +99,14 @@ function Home() {
                 </li>
               </ul>
             </Col>
-          </Row>      
+          </Row>  
+          <Row>
+            <Col md={12} style={{ display: "flex", padding: 10, zIndex: 1201 }}>
+              <Link to="/portfolio" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
+                <img src={portfolio} alt="Portfolio" style={{ width: '32px', height: '32px' }} />
+              </Link>
+            </Col>
+          </Row>    
         </Container>
       </section>
     </>
