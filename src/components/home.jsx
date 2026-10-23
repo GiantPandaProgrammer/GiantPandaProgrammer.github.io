@@ -88,23 +88,11 @@ function Home() {
                   </a>
                 </li>
                 <li className="social-icons">
-                  <a
-                    href="/portfolio"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <img src={portfolio} alt="Portfolio" style={{ width: '32px', height: '32px' }} />
-                  </a>
+                <Link to="/portfolio" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
+                  <img src={portfolio} alt="Portfolio" style={{ width: '32px', height: '32px' }} />
+                </Link>
                 </li>
               </ul>
-            </Col>
-          </Row>  
-          <Row>
-            <Col md={12} style={{ display: "flex", padding: 10, zIndex: 1201 }}>
-              <Link to="/portfolio" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
-                <img src={portfolio} alt="Portfolio" style={{ width: '32px', height: '32px' }} />
-              </Link>
             </Col>
           </Row>    
         </Container>
